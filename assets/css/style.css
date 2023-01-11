@@ -728,7 +728,7 @@ a:focus.service-btn{
 .single-ststistics-box {
     display: flex;
     margin-bottom:30px;
-	height: 75px;
+
 }
 /* single-ststistics-box */
 .statistics-content {
@@ -819,7 +819,7 @@ a:focus.service-btn{
 	position:absolute;
 	height:100%;
 	width:100%;
-	background:rgba(115,112,216,.75);
+	background:rgba(35, 34, 65, 0.75);
 	display:flex;
 	align-items:center;
 	text-transform: capitalize;
@@ -1758,28 +1758,33 @@ a:active.learn-btn{
 
 .about-part{
 	position:relative;
-	background:url(../../assets/images/about/about-banner.jpg)no-repeat;
+	background:url(../images/APSAI/galeria1.jpeg)no-repeat;
+	background-position:center;
+	
+	padding: 124px 0 144px;
+	z-index:1;
+}
+.about-part.service-part{
+	background: url(../images/APSAI/banner1.jpeg)no-repeat center;
+}
+.about-part.project-part{
+	background: url(../images/APSAI/banner1.jpeg)no-repeat center;
+}
+.about-part.team-part{
+	background: url(../images/APSAI/banner1.jpeg)no-repeat center;
+}
+.about-part.blog-part{
+	position:relative;
+	background:url(../images/APSAI/banner1.jpeg)no-repeat;
 	background-position:center;
 	background-size:cover;
 	padding: 124px 0 144px;
 	z-index:1;
 }
-.about-part.service-part{
-	background: url(../images/service/service-banner.jpg)no-repeat center;
-}
-.about-part.project-part{
-	background: url(../images/project/project-banner.jpg)no-repeat center;
-}
-.about-part.team-part{
-	background: url(../images/team/team-banner.jpg)no-repeat center;
-}
-.about-part.blog-part{
-	background: url(../images/blog/blog-banner.jpg)no-repeat center;
-}
 .about-part:before{
 	position:absolute;
 	content:'';
-	background: rgba(115,112,216,.6);
+	background: rgba(34, 33, 54, 0.6);
 	height:100%;
 	width:100%;
 	top:0;
