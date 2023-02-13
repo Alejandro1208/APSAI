@@ -833,7 +833,19 @@
                       <!--/.row-->
                     </form>
 					<?php
-					include("formulario.php");
+          if(isset($_POST['submit'])){
+            $to = "info@apsai.org.ar"; // Este es el correo electrónico al que se enviarán los datos
+            $from = $_POST['email']; // Este es el correo electrónico del remitente
+            $first_name = $_POST['firstname'];
+            $last_name = $_POST['lastname'];
+            $phone = $_POST['phone'];
+            $message = $first_name . " " . $last_name . " escribió lo siguiente:" . "\n\n" . $_POST['message'];
+          
+            $headers = "From:" . $from;
+            mail($to,$message,$headers);
+          
+            echo "El mensaje se ha enviado. Gracias " . $first_name . ", nos pondremos en contacto contigo lo antes posible.";
+            } 
 					?>
 				
 
