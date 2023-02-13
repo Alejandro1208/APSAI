@@ -740,7 +740,7 @@
                 <div class="single-contact-box">
                   <div class="contact-form">
                     <h3 id="">Para mas informacion</h3>
-                    <form id="contact-form" action="formulario.php">
+                    <form id="contact-form" method="post">
                       <div class="row">
                         <div class="col-sm-6 col-xs-12">
                           <div class="form-group">
@@ -832,6 +832,9 @@
                       </div>
                       <!--/.row-->
                     </form>
+					<?php
+					include("formulario.php");
+					?>
 				
 
                     <!--/form-->
