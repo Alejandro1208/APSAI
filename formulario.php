@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
   $telefono = $_POST['phone'];
   $mensaje = $_POST['message'];
 
-  $to = "tucorreo@ejemplo.com";
+  $to = "info@apsai.org.ar";
   $subject = "Mensaje desde el formulario de contacto";
 
   $message = "
