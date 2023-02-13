@@ -7,7 +7,14 @@ $(document).ready(function(){
 * Version       : 1.0
 ==================================== */
 
-
+window.addEventListener("scroll", function () {
+	let whatsappButton = document.querySelector(".whatsapp-float");
+	if (window.scrollY > 20) {
+	  whatsappButton.style.display = "block";
+	} else {
+	  whatsappButton.style.display = "none";
+	}
+  });
 
 
         /*=========== TABLE OF CONTENTS ===========
